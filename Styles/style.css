@@ -1,0 +1,613 @@
+* {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #000000 4.33%,
+        #142807 33.33%,
+        #000000 67.19%,
+        #142807 100%
+    );
+    background-repeat: no-repeat;
+}
+
+.main-color {
+    color: #61ff00;
+}
+
+.developer-color {
+    color: #ff9900;
+}
+
+.designer-color {
+    color: #ff00d6;
+}
+
+/*  T E X T  */
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+#projects > h2 {
+    margin-bottom: 6.9vh;
+}
+
+#projects > h3 {
+    margin-bottom: 3vh;
+}
+
+.porto-detail > h4 {
+    display: inline-block;
+}
+
+span {
+    font-weight: 600;
+}
+
+h1,
+h3,
+h4,
+p {
+    margin-bottom: 2.1vh;
+}
+
+#experiences h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#experiences h6 {
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 0.3rem;
+}
+
+#experiences p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#experiences ul li {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+#contact-me > a {
+    color: #61ff00;
+    font-weight: 600;
+}
+
+.porto-detail > p {
+    width: 25vw;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.porto-detail > h4 {
+    word-break: break-word;
+    white-space: normal;
+    width: 25vw;
+}
+
+/* B U T T O N */
+.button-rounded > p {
+    opacity: 80%;
+    margin: 0 0;
+    display: inline;
+}
+
+.button-rounded {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border: 0.5px solid white;
+    border-radius: 5vw;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.button-rounded:hover {
+    background-color: #61ff00;
+    border: none;
+}
+
+.button-rounded:hover p,
+.button-rounded:hover span,
+.button-rounded:hover i {
+    color: black;
+}
+
+/*  H E A D E R  */
+.header-center {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #000; /* Ganti sesuai tema */
+    display: flex;
+    justify-content: center; /* NAVBAR DI TENGAH */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.7));
+}
+
+.logo > img {
+    height: 5.6vh;
+    width: 100%;
+}
+
+.navbar-section > a {
+    margin-left: 7vw;
+    text-decoration: none;
+    color: White;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.navbar-section > a:hover,
+.social-media > a > i:hover {
+    color: #61ff00;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.546));
+}
+
+/*  C O N T E N T  */
+.dots-right {
+    transform: scaleX(-1);
+    right: -10%;
+    height: 100%;
+}
+
+.dots-left {
+    left: -10%;
+    height: 100%;
+}
+
+.dots-box {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    z-index: -5;
+}
+
+.content {
+    margin: 0 4.9vw;
+    margin-bottom: 13.8vh;
+}
+
+.box {
+    border: 1px solid #4a5568;
+    border-radius: 2vw;
+    padding: 5vh 4.9vw;
+    margin: 2.8vh;
+    overflow: hidden;
+}
+
+#home > .box {
+    margin: 0 20vw;
+}
+
+.photo-profile {
+    height: 22vh; /* Sedikit lebih besar dari sebelumnya */
+    width: 22vh; /* Buat proporsional, supaya jadi bulat */
+    border-radius: 50%; /* Bikin bulat */
+    object-fit: cover; /* Foto tetap proporsional */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Neon green glow */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Border tipis */
+    margin-bottom: 2.5vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover interaktif */
+.photo-profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+}
+
+.porto-list {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 1vh;
+    margin-bottom: 6.9vh;
+    align-items: flex-start;
+}
+
+.porto-card {
+    display: inline-block;
+    margin-right: 2.5vw;
+}
+
+.porto-card > a > img {
+    width: 25vw;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    border-radius: 1.4vw;
+    margin-bottom: 2.1vh;
+}
+
+.porto-card:hover img {
+    filter: none;
+}
+
+.porto-skill {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 25vw;
+}
+
+.porto-skill > p {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.skill-designer,
+.skill-developer {
+    width: fit-content;
+    font-weight: 500;
+    border-radius: 3.5vw;
+    margin: 0 0.4vw;
+    padding: 1px 10px;
+    margin-bottom: 1.4vh;
+    background-color: white;
+    color: black;
+    font-size: 0.875rem;
+}
+
+.porto-list,
+.porto-skill {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+.porto-list::-webkit-scrollbar,
+.porto-skill::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+/* #projects{
+  background-image: url(Assets/dots\ effect\ 3.svg);
+  background-repeat: no-repeat;
+} */
+
+#contact-me {
+    background-image: url(Assets/dots\ effect\ 1:2.svg);
+}
+
+/* F O O T E R */
+footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -5.47%, #000000 100%);
+    padding: 6.9vh;
+}
+
+.social-media > a > i {
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+
+.social-media {
+    margin: 0 1.4vw;
+    display: inline-block;
+}
+
+/* P O R T O   D E T A I L S */
+.project-short-description,
+.project-details-title {
+    opacity: 50%;
+    font-weight: 400;
+}
+
+#project-image-highlight img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#project-details,
+#project-description {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#project-image-list img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-marquee 40s linear infinite;
+    will-change: transform;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+.porto-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.porto-marquee-content {
+    display: inline-flex;
+    gap: 2rem;
+    animation: scroll-left-to-right 30s linear infinite;
+    will-change: transform;
+    -webkit-animation: scroll-left-to-right 30s linear infinite;
+}
+
+/* Pause saat hover */
+.porto-marquee-container:hover .porto-marquee-content {
+    animation-play-state: paused;
+}
+
+/* Animasi dari kiri ke kanan tanpa delay kosong */
+@keyframes scroll-left-to-right {
+    0% {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* R E S P O N S I V E */
+/* large screen  */
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .porto-card > a > img {
+        width: 40vw;
+        border-radius: 3vw;
+    }
+
+    .porto-skill,
+    .porto-detail > p,
+    .porto-detail > h4 {
+        width: 40vw;
+    }
+
+    .porto-card {
+        margin-right: 4vw;
+    }
+
+    #home > .box {
+        margin: 0 0;
+    }
+
+    .box {
+        border-radius: 4vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
+
+    #experiences > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* #contact-me {
+    background-image: none;
+  } */
+
+    .dots-box {
+        height: 90vh;
+    }
+
+    .dots-left {
+        left: -10%;
+    }
+
+    .dots-right {
+        right: -10%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .photo-profile {
+        height: 22vh;
+    }
+
+    /* P O R T O   D E T A I L S */
+    #project-details,
+    #project-description {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+/* iPads, Tablets */
+@media only screen and (max-device-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .porto-card > a > img {
+        width: 50vw;
+        border-radius: 3vw;
+    }
+
+    .porto-skill,
+    .porto-detail > p,
+    .porto-detail > h4 {
+        width: 50vw;
+    }
+
+    .porto-card {
+        margin-right: 5vw;
+    }
+
+    #home > .box {
+        margin: 0 0;
+    }
+
+    .box {
+        border-radius: 4vw;
+    }
+
+    #experiences > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* #contact-me {
+      background-image: none;
+    } */
+
+    .dots-box {
+        height: 90vh;
+    }
+
+    .dots-left {
+        left: -10%;
+    }
+
+    .dots-right {
+        right: -10%;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .photo-profile {
+        height: 18vh;
+    }
+
+    .porto-card > a > img {
+        filter: none;
+    }
+
+    /* P O R T O   D E T A I L S */
+    #project-details,
+    #project-description {
+        margin-left: 4.9vw;
+        margin-right: 4.9vw;
+    }
+}
+
+/* Mobile screen  */
+
+@media only screen and (max-device-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .porto-card > a > img {
+        width: 60vw;
+        border-radius: 3vw;
+    }
+
+    .porto-skill,
+    .porto-detail > p,
+    .porto-detail > h4 {
+        width: 60vw;
+    }
+
+    .porto-card {
+        margin-right: 6vw;
+    }
+
+    #home > .box {
+        margin: 0 0;
+    }
+
+    .box {
+        border-radius: 4vw;
+    }
+
+    #experiences > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* 
+    #contact-me {
+      background-image: none;
+    } */
+
+    .dots-box {
+        height: 90vh;
+    }
+
+    .dots-left {
+        left: -35%;
+    }
+
+    .dots-right {
+        right: -35%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .photo-profile {
+        height: 15vh;
+    }
+
+    .porto-card > a > img {
+        filter: none;
+    }
+}
