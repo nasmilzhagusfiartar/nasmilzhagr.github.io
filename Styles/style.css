@@ -215,12 +215,13 @@ p {
 }
 
 .photo-profile {
-  height: 22vh; /* Sedikit lebih besar dari sebelumnya */
-  width: 22vh; /* Buat proporsional, supaya jadi bulat */
-  border-radius: 50%; /* Bikin bulat */
-  object-fit: cover; /* Foto tetap proporsional */
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Neon green glow */
-  border: 3px solid rgba(255, 255, 255, 0.1); /* Border tipis */
+  width: 100%;
+  max-width: 180px; /* Ukuran maksimum di layar besar */
+  aspect-ratio: 1/1; /* Membuat gambar tetap proporsional (bulat) */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 2.5vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -533,7 +534,7 @@ footer {
   }
 
   .photo-profile {
-    height: 18vh;
+    max-width: 140px;
   }
 
   .porto-card > a > img {
